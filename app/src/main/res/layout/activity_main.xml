@@ -133,6 +133,36 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day 5"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnDay5Part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part 1"
+                android:layout_marginLeft="16dp"/>
+
+            <Button
+                android:id="@+id/btnDay5Part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Part 2"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

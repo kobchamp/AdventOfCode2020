@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import com.kob.adventofcode2020.models.Day1
-import com.kob.adventofcode2020.models.Day2
-import com.kob.adventofcode2020.models.Day3
-import com.kob.adventofcode2020.models.Day4
+import com.kob.adventofcode2020.models.*
 import kotlinx.android.synthetic.main.activity_main.*
+import org.json.JSONObject
 import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity() {
@@ -89,6 +87,22 @@ class MainActivity : AppCompatActivity() {
             Log.e("Day4", "Number of valid ${Day4.countValidPassPort2()}")
             Toast.makeText(
                 this, "Number of valid ${Day4.countValidPassPort2()}"
+                , Toast.LENGTH_LONG
+            ).show()
+        }
+
+        btnDay5Part1.setOnClickListener {
+            Log.e("Day5", "Seat ID :  ${Day5.getHighestSeatID()}")
+            Toast.makeText(
+                this, "Seat ID : ${Day5.getHighestSeatID()}"
+                , Toast.LENGTH_LONG
+            ).show()
+        }
+
+        btnDay5Part2.setOnClickListener {
+            Log.e("Day5", "Your Seat ID : ${Day5.getHighestSeatID2()}")
+            Toast.makeText(
+                this, "Your Seat ID : ${Day5.getHighestSeatID2()}"
                 , Toast.LENGTH_LONG
             ).show()
         }
