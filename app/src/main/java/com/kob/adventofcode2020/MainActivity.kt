@@ -106,5 +106,21 @@ class MainActivity : AppCompatActivity() {
                 , Toast.LENGTH_LONG
             ).show()
         }
+
+        btnDay6Part1.setOnClickListener {
+            Log.e("Day6", "sum of these counts is   ${Day6.getSum()}")
+            Toast.makeText(
+                this, "sum of these counts is  ${Day6.getSum()}"
+                , Toast.LENGTH_LONG
+            ).show()
+        }
+
+        btnDay6Part2.setOnClickListener {
+            Log.e("Day6", "sum of these counts is  ${Day6.getSumIntersect()}")
+            Toast.makeText(
+                this, "sum of these counts is  ${Day6.getSumIntersect()}"
+                , Toast.LENGTH_LONG
+            ).show()
+        }
     }
 }
